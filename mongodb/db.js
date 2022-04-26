@@ -4,7 +4,7 @@ const moment = require('moment-timezone')
 moment.tz.setDefault('Asia/Jakarta').locale('id')
 
     async function createUser(name, email, pass) {
-        let obj = {name: name, email: email, password: pass, todo: []}
+        let obj = {currentLevel:1, tasksDone:0, bag:[], name: name, email: email, password: pass, todo: []}
         await User.create(obj)
     }
     module.exports.createUser = createUser
