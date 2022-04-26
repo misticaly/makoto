@@ -1,2 +1,0 @@
-# makoto
-Personal Assistant
